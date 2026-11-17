@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroMEL Calculator — Documentos Legales / Legal Documents</title>
+  <meta name="description" content="Política de Privacidad y Términos y Condiciones oficiales de AeroMEL Calculator.">
+  <style>
+    :root {
+      --bg-navy: #0D253D;
+      --surface-card: #153250;
+      --surface-hover: #1A3D61;
+      --border-subtle: #284B6E;
+      --accent-orange: #FC6F03;
+      --accent-orange-hover: #E06200;
+      --text-primary: #FFFFFF;
+      --text-secondary: #8BA0B3;
+      --text-muted: #909FA6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-navy);
+      color: var(--text-primary);
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+      flex: 1;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--text-primary);
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+
+    .brand-sub {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent-orange);
+      color: var(--text-primary);
+    }
+
+    .hero {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 28px 26px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(252, 111, 3, 0.14);
+      border: 1px solid rgba(252, 111, 3, 0.45);
+      color: #FFA057;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #D7E3EE;
+      font-size: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent-orange);
+      background: var(--surface-hover);
+      transform: translateY(-2px);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .card p {
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      background: var(--accent-orange);
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 11px 18px;
+      border-radius: 8px;
+      transition: background 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-orange-hover);
+    }
+
+    .summary-box {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--accent-orange);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+    }
+
+    .summary-box h3 {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+    }
+
+    .summary-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .summary-list li {
+      font-size: 0.94rem;
+      color: #D7E3EE;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .summary-list li::before {
+      content: "•";
+      color: var(--accent-orange);
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      background: rgba(21, 50, 80, 0.55);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 18px 20px;
+      font-size: 0.88rem;
+    }
+
+    .meta-label {
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .meta-value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      color: var(--text-primary);
+      word-break: break-word;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 22px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.84rem;
+    }
+
+    footer a {
+      color: #FFA057;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    [data-lang="en"] {
+      display: none;
+    }
+
+    body.lang-en [data-lang="es"] {
+      display: none;
+    }
+
+    body.lang-en [data-lang="en"] {
+      display: block;
+    }
+
+    body.lang-en span[data-lang="en"],
+    body.lang-en a[data-lang="en"] {
+      display: inline;
+    }
+
+    body.lang-en span[data-lang="es"],
+    body.lang-en a[data-lang="es"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title">AeroMEL Calculator</div>
+          <div class="brand-sub">LEGAL &amp; COMPLIANCE PORTAL</div>
+        </div>
+      </a>
+
+      <div class="lang-switch" role="group" aria-label="Selector de idioma / Language selector">
+        <button type="button" class="lang-btn active" id="btn-es" onclick="setLang('es')">Español</button>
+        <button type="button" class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <span class="badge" data-lang="es">Documentación Oficial</span>
+      <span class="badge" data-lang="en">Official Documentation</span>
+
+      <h1 data-lang="es">Documentos Legales de AeroMEL Calculator</h1>
+      <h1 data-lang="en">AeroMEL Calculator Legal Documents</h1>
+
+      <p data-lang="es">
+        Este portal aloja los documentos públicos oficiales de <strong>Política de Privacidad</strong> y
+        <strong>Términos y Condiciones</strong> de la aplicación móvil <strong>AeroMEL Calculator</strong>,
+        desarrollada por <strong>Misael Ancan</strong> y generada con base en las plantillas de
+        <em>App Privacy Policy Generator</em>.
+      </p>
+      <p data-lang="en">
+        This portal hosts the official public <strong>Privacy Policy</strong> and
+        <strong>Terms &amp; Conditions</strong> for the <strong>AeroMEL Calculator</strong> mobile application,
+        developed by <strong>Misael Ancan</strong> and generated using
+        <em>App Privacy Policy Generator</em> templates.
+      </p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <div>
+          <h2 data-lang="es">Política de Privacidad</h2>
+          <h2 data-lang="en">Privacy Policy</h2>
+          <p data-lang="es">
+            Detalla el funcionamiento 100% offline del cálculo horario UTC, la ausencia de recolección de datos
+            personales por el desarrollador y el uso del SDK publicitario de terceros (Google AdMob).
+          </p>
+          <p data-lang="en">
+            Details the 100% offline UTC clock calculation behavior, zero personal data collection by the
+            developer, and third-party advertising SDK disclosures (Google AdMob).
+          </p>
+        </div>
+        <a class="btn-primary" href="privacy-policy.html" data-lang="es" id="link-privacy-es">Ver Política de Privacidad</a>
+        <a class="btn-primary" href="privacy-policy.html?lang=en" data-lang="en" id="link-privacy-en">View Privacy Policy</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2 data-lang="es">Términos y Condiciones</h2>
+          <h2 data-lang="en">Terms &amp; Conditions</h2>
+          <p data-lang="es">
+            Incluye la licencia de uso, propiedad intelectual, limitación de responsabilidad, servicios de
+            terceros y el <strong>Descargo de Responsabilidad Aeronáutico (MEL)</strong>.
+          </p>
+          <p data-lang="en">
+            Includes the application license, intellectual property, limitation of liability, third-party
+            services, and the <strong>Aviation Operational Disclaimer (MEL)</strong>.
+          </p>
+        </div>
+        <a class="btn-primary" href="terms-and-conditions.html" data-lang="es" id="link-terms-es">Ver Términos y Condiciones</a>
+        <a class="btn-primary" href="terms-and-conditions.html?lang=en" data-lang="en" id="link-terms-en">View Terms &amp; Conditions</a>
+      </article>
+    </section>
+
+    <section class="summary-box">
+      <h3 data-lang="es">Resumen Transparente de la Microapp</h3>
+      <h3 data-lang="en">Microapp Transparency Summary</h3>
+      <ul class="summary-list" data-lang="es">
+        <li><strong>Cálculo MEL offline:</strong> Utiliza exclusivamente el reloj local del dispositivo convertido a UTC sin requerir conexión a internet.</li>
+        <li><strong>Sin registro ni datos personales:</strong> El desarrollador no solicita nombres, correos electrónicos, cuentas ni ubicación.</li>
+        <li><strong>Publicidad de terceros (Google AdMob):</strong> Cuando existe conexión, el banner inferior utiliza Google AdMob y Google Play Services, los cuales pueden procesar identificadores publicitarios y diagnósticos técnicos.</li>
+        <li><strong>Herramienta de apoyo aeronáutico:</strong> Todo vencimiento MEL debe verificarse siempre contra el manual MEL aprobado de la aeronave y la normativa aplicable.</li>
+      </ul>
+      <ul class="summary-list" data-lang="en">
+        <li><strong>Offline MEL calculation:</strong> Uses only the device's internal clock converted to UTC without requiring an internet connection.</li>
+        <li><strong>No registration or personal data:</strong> The developer does not request names, email addresses, accounts, or location data.</li>
+        <li><strong>Third-party advertising (Google AdMob):</strong> When online, the bottom banner uses Google AdMob and Google Play Services, which may process advertising identifiers and technical diagnostics.</li>
+        <li><strong>Aviation reference tool:</strong> Every MEL expiration date must always be verified against the approved aircraft MEL manual and applicable aviation regulations.</li>
+      </ul>
+    </section>
+
+    <section class="meta-grid">
+      <div>
+        <div class="meta-label">Application</div>
+        <div class="meta-value">AeroMEL Calculator</div>
+      </div>
+      <div>
+        <div class="meta-label">Service Provider</div>
+        <div class="meta-value">Misael Ancan</div>
+      </div>
+      <div>
+        <div class="meta-label">Contact</div>
+        <div class="meta-value">misael.ancan.1234@gmail.com</div>
+      </div>
+      <div>
+        <div class="meta-label">Effective Date</div>
+        <div class="meta-value">2026-11-17</div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>
+      AeroMEL Calculator &copy; 2026 Misael Ancan &middot;
+      <span data-lang="es">Plantillas base generadas con</span>
+      <span data-lang="en">Base templates generated with</span>
+      <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a>.
+    </p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      var isEn = lang === 'en';
+      document.body.classList.toggle('lang-en', isEn);
+      document.documentElement.lang = isEn ? 'en' : 'es';
+      document.getElementById('btn-es').classList.toggle('active', !isEn);
+      document.getElementById('btn-en').classList.toggle('active', isEn);
+      var url = new URL(window.location.href);
+      if (isEn) {
+        url.searchParams.set('lang', 'en');
+      } else {
+        url.searchParams.delete('lang');
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    (function initLang() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('lang') === 'en') {
+        setLang('en');
+      }
+    })();
+  </script>
+</body>
+</html>

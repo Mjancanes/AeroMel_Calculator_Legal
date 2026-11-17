@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones / Terms &amp; Conditions — AeroMEL Calculator</title>
+  <meta name="description" content="Términos y Condiciones oficiales y Descargo de Responsabilidad Aeronáutico (MEL) de AeroMEL Calculator.">
+  <style>
+    :root {
+      --bg-navy: #0D253D;
+      --surface-card: #153250;
+      --border-subtle: #284B6E;
+      --accent-orange: #FC6F03;
+      --text-primary: #FFFFFF;
+      --text-secondary: #8BA0B3;
+      --text-body: #DCE7F2;
+      --warning-bg: rgba(252, 111, 3, 0.14);
+      --warning-border: rgba(252, 111, 3, 0.55);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-navy);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+      flex: 1;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 26px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+
+    .nav-link:hover {
+      color: var(--text-primary);
+      border-color: var(--border-subtle);
+      background: var(--surface-card);
+    }
+
+    .nav-link.active {
+      color: var(--text-primary);
+      background: var(--surface-card);
+      border-color: var(--accent-orange);
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      padding: 7px 14px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: var(--accent-orange);
+      color: var(--text-primary);
+    }
+
+    .doc-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 32px 28px;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .disclaimer-box {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      border-left: 5px solid var(--accent-orange);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 26px;
+    }
+
+    .disclaimer-box strong.disclaimer-title {
+      display: block;
+      color: #FFB070;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .disclaimer-box p {
+      margin-bottom: 8px;
+      color: #F4F8FC;
+    }
+
+    .disclaimer-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      color: #FFA057;
+      margin-top: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-body);
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+    }
+
+    ul {
+      margin: 8px 0 16px 22px;
+      color: var(--text-body);
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 0.96rem;
+    }
+
+    a {
+      color: #FFA057;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #FFC08D;
+    }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      margin: 28px 0 18px;
+    }
+
+    .attribution {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+    }
+
+    [data-lang="en"] {
+      display: none;
+    }
+
+    body.lang-en [data-lang="es"] {
+      display: none;
+    }
+
+    body.lang-en [data-lang="en"] {
+      display: block;
+    }
+
+    body.lang-en span[data-lang="en"],
+    body.lang-en a[data-lang="en"] {
+      display: inline;
+    }
+
+    body.lang-en span[data-lang="es"],
+    body.lang-en a[data-lang="es"] {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .doc-card {
+        padding: 22px 18px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <nav class="nav-links" aria-label="Navegación legal">
+        <a class="nav-link" href="index.html" data-lang="es">&larr; Inicio</a>
+        <a class="nav-link" href="index.html?lang=en" data-lang="en">&larr; Home</a>
+        <a class="nav-link" href="privacy-policy.html" data-lang="es">Política de Privacidad</a>
+        <a class="nav-link" href="privacy-policy.html?lang=en" data-lang="en">Privacy Policy</a>
+        <a class="nav-link active" href="terms-and-conditions.html" data-lang="es">Términos y Condiciones</a>
+        <a class="nav-link active" href="terms-and-conditions.html?lang=en" data-lang="en">Terms &amp; Conditions</a>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <button type="button" class="lang-btn active" id="btn-es" onclick="setLang('es')">Español</button>
+        <button type="button" class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <main class="doc-card">
+      <!-- ==================== VERSIÓN EN ESPAÑOL ==================== -->
+      <article data-lang="es">
+        <h1>Términos y Condiciones</h1>
+        <div class="subtitle">AeroMEL Calculator &middot; Vigente desde: 2026-11-17</div>
+
+        <section class="disclaimer-box">
+          <strong class="disclaimer-title">Descargo de Responsabilidad Operacional Aeronáutico (MEL)</strong>
+          <p>
+            <strong>AeroMEL Calculator</strong> es únicamente una herramienta auxiliar de referencia rápida para el cálculo
+            de intervalos de vencimiento de Lista de Equipo Mínimo (MEL: <code>CAT A (Variable)</code>,
+            <code>CAT B (3 Days)</code>, <code>CAT C (10 Days)</code>, <code>CAT D (120 Days)</code> y
+            <code>MANUAL (Personalizado)</code>).
+          </p>
+          <p>
+            Esta aplicación <strong>no sustituye</strong> al Manual MEL aprobado de la aeronave, al Manual de Control de
+            Mantenimiento (MCM/GMM), a las Especificaciones de Operación del explotador aéreo ni a las regulaciones de
+            la autoridad aeronáutica competente (<strong>DGAC, FAA, EASA, OACI</strong> u otra autoridad local).
+            El técnico de mantenimiento aeronáutico, ingeniero, despachador o tripulación de vuelo debe verificar siempre
+            de forma independiente la hora UTC exacta, la fecha de reporte y el vencimiento definitivo contra la
+            documentación oficial aprobada antes de despachar o liberar cualquier aeronave al servicio.
+          </p>
+        </section>
+
+        <p>
+          Estos términos y condiciones se aplican a la aplicación <strong>AeroMEL Calculator</strong> para dispositivos
+          móviles (Android e iOS), junto con cualquier servicio relacionado operado por <strong>Misael Ancan</strong>
+          (en conjunto, la &laquo;Aplicación&raquo;). En adelante, <strong>Misael Ancan</strong> se denomina el
+          &laquo;Proveedor de Servicios&raquo;.
+        </p>
+        <p>
+          Al descargar o utilizar la Aplicación, aceptas estos Términos y Condiciones. Debes leerlos atentamente antes
+          de utilizar la Aplicación.
+        </p>
+
+        <h2>Licencia de Uso de la Aplicación</h2>
+        <p>
+          Sujeto a tu cumplimiento de estos Términos, el Proveedor de Servicios te otorga una licencia limitada, no
+          exclusiva, no transferible y revocable para instalar y utilizar la Aplicación en un dispositivo móvil para
+          fines personales o de referencia interna. No puedes reproducir, distribuir, modificar, crear obras derivadas,
+          realizar ingeniería inversa, descompilar ni desensamblar la Aplicación, salvo en la medida en que dicha
+          actividad esté expresamente permitida por la ley aplicable.
+        </p>
+
+        <h2>Propiedad Intelectual</h2>
+        <p>
+          El Proveedor de Servicios conserva todos los derechos de propiedad intelectual sobre la Aplicación, incluidos
+          su código, diseño, marcas comerciales, nombres comerciales, logotipos e imagen de marca. Nada en estos
+          Términos te otorga licencia o derecho alguno para utilizar las marcas o logotipos del Proveedor de Servicios
+          con ningún propósito. Aceptas no eliminar, alterar ni ocultar ningún aviso de derechos de autor o propiedad
+          mostrado en la Aplicación.
+        </p>
+
+        <h2>Terminación</h2>
+        <p>
+          El Proveedor de Servicios puede suspender o dar por terminado tu acceso a la Aplicación si incumples de manera
+          sustancial estos Términos, infringes la ley aplicable o vulneras derechos de propiedad intelectual. Al
+          terminar la licencia, cesarán todos los derechos otorgados en estos Términos y deberás dejar de usar la
+          Aplicación y eliminarla de tus dispositivos.
+        </p>
+        <p>
+          Al acceder y utilizar esta Aplicación, declaras que estás legalmente autorizado para hacerlo en tu
+          jurisdicción y que tienes al menos la edad de consentimiento digital aplicable (por ejemplo, 13 o 16 años,
+          o autorización de un padre o tutor legal).
+        </p>
+
+        <h2>Seguridad del Dispositivo y Almacenamiento</h2>
+        <p>
+          La Aplicación funciona localmente en tu dispositivo sin requerir el envío de tus cálculos MEL a servidores
+          externos. Es tu responsabilidad mantener la seguridad de tu dispositivo móvil, así como la exactitud de la
+          configuración de fecha, hora y zona horaria del sistema operativo sobre la cual la Aplicación calcula el
+          tiempo UTC en modo offline.
+        </p>
+        <p>
+          El Proveedor de Servicios desaconseja encarecidamente realizar <em>jailbreak</em> o <em>root</em> en tu
+          dispositivo móvil, ya que eliminar las restricciones oficiales del sistema operativo puede exponer el teléfono
+          a malware, comprometer funciones de seguridad e impedir que la Aplicación funcione correctamente.
+        </p>
+
+        <h2>Servicios de Terceros</h2>
+        <p>
+          Ten en cuenta que la Aplicación utiliza servicios de terceros que poseen sus propios Términos y Condiciones.
+          A continuación se detallan los enlaces oficiales de los proveedores de servicios de terceros integrados:
+        </p>
+        <ul>
+          <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+          <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+        </ul>
+
+        <h2>Conectividad, Datos Móviles y Batería</h2>
+        <p>
+          Ten presente que, si bien el núcleo de cálculo MEL de la Aplicación está diseñado para operar
+          <strong>100% offline</strong> usando el reloj interno del teléfono, ciertas funciones complementarias (como la
+          carga del banner publicitario de Google AdMob) requieren una conexión activa a internet mediante Wi-Fi o red
+          móvil. El Proveedor de Servicios no se responsabiliza si los anuncios no se cargan por falta de conexión o si
+          utilizas la Aplicación fuera de una zona Wi-Fi incurriendo en cargos de datos de tu operador móvil.
+        </p>
+        <p>
+          Del mismo modo, es tu responsabilidad asegurarte de que tu dispositivo cuente con batería suficiente y con su
+          reloj del sistema correctamente ajustado. Si el dispositivo se queda sin batería o tiene la hora del sistema
+          desconfigurada, el Proveedor de Servicios no asume responsabilidad alguna por la indisponibilidad o el cálculo
+          resultante.
+        </p>
+
+        <h2>Derechos del Consumidor y Limitación de Responsabilidad</h2>
+        <p>
+          Nada en estos Términos limitará los derechos que te correspondan conforme a las leyes imperativas de
+          protección al consumidor que no puedan excluirse legalmente.
+        </p>
+        <p>
+          En la máxima medida permitida por la ley, el Proveedor de Servicios no será responsable por daños indirectos,
+          incidentales, especiales, consecuentes o punitivos, incluyendo pérdida de beneficios, pérdida de datos,
+          retrasos operacionales o decisiones de aeronavegabilidad o despacho tomadas con base en la Aplicación. No
+          obstante, el Proveedor de Servicios mantiene plena responsabilidad únicamente en los supuestos que no puedan
+          excluirse ni limitarse conforme a la ley aplicable (tales como dolo, fraude o daños personales causados por
+          negligencia grave cuando la ley prohíba su exclusión). Dado que la Aplicación se ofrece de forma gratuita, la
+          responsabilidad total del Proveedor de Servicios se limita al importe mínimo permitido por la ley aplicable.
+        </p>
+
+        <h2>Indemnización</h2>
+        <p>
+          En la medida permitida por la ley aplicable, aceptas indemnizar y mantener indemne al Proveedor de Servicios
+          frente a reclamaciones o pérdidas derivadas directamente de tu incumplimiento de estos Términos o del uso
+          indebido e intencional de la Aplicación, salvo cuando dicha reclamación sea consecuencia de negligencia o
+          incumplimiento del propio Proveedor de Servicios.
+        </p>
+
+        <h2>Actualizaciones y Cese de la Aplicación</h2>
+        <p>
+          El Proveedor de Servicios podrá actualizar la Aplicación en cualquier momento o modificar los requisitos del
+          sistema operativo compatibles. No se garantiza que la Aplicación sea siempre compatible con todas las versiones
+          futuras o pasadas de Android o iOS. Asimismo, el Proveedor de Servicios se reserva el derecho de suspender o
+          discontinuar la distribución de la Aplicación en cualquier momento sin previo aviso.
+        </p>
+
+        <h2>Ley Aplicable, Divisibilidad y Acuerdo Completo</h2>
+        <p>
+          Estos Términos y Condiciones se rigen por las leyes de la jurisdicción en la que esté establecido el Proveedor
+          de Servicios (República de Chile), sin perjuicio de las normas imperativas de protección al consumidor que
+          resulten aplicables en tu país de residencia. Si alguna disposición de estos Términos fuera declarada
+          inválida o inaplicable, las demás disposiciones permanecerán en pleno vigor y efecto. Estos Términos y
+          Condiciones, junto con la <a href="privacy-policy.html">Política de Privacidad</a>, constituyen el acuerdo
+          íntegro entre tú y el Proveedor de Servicios respecto al uso de la Aplicación.
+        </p>
+
+        <h2>Cambios en Estos Términos y Condiciones</h2>
+        <p>
+          El Proveedor de Servicios puede actualizar periódicamente sus Términos y Condiciones. Por ello, te
+          recomendamos revisar esta página regularmente para estar al tanto de cualquier cambio. Las modificaciones se
+          notificarán publicando los nuevos Términos y Condiciones en esta página, y las versiones anteriores podrán
+          solicitarse escribiendo a <a href="mailto:misael.ancan.1234@gmail.com">misael.ancan.1234@gmail.com</a>.
+        </p>
+        <p><strong>Estos términos y condiciones entran en vigor a partir del 2026-11-17.</strong></p>
+
+        <h2>Contáctanos</h2>
+        <p>
+          Si tienes alguna pregunta o sugerencia sobre estos Términos y Condiciones, no dudes en ponerte en contacto con
+          el Proveedor de Servicios en <a href="mailto:misael.ancan.1234@gmail.com">misael.ancan.1234@gmail.com</a>.
+        </p>
+
+        <hr class="divider">
+        <p class="attribution">
+          Esta página de Términos y Condiciones fue generada utilizando las plantillas de
+          <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a>.
+        </p>
+      </article>
+
+      <!-- ==================== ENGLISH VERSION (APP PRIVACY POLICY GENERATOR) ==================== -->
+      <article data-lang="en">
+        <h1>Terms &amp; Conditions</h1>
+        <div class="subtitle">AeroMEL Calculator &middot; Effective as of: 2026-11-17</div>
+
+        <section class="disclaimer-box">
+          <strong class="disclaimer-title">Aviation Operational Disclaimer (MEL Reference Tool)</strong>
+          <p>
+            <strong>AeroMEL Calculator</strong> is solely a supplementary quick-reference tool for calculating Minimum
+            Equipment List (MEL) repair interval expiration dates (<code>CAT A (Variable)</code>,
+            <code>CAT B (3 Days)</code>, <code>CAT C (10 Days)</code>, <code>CAT D (120 Days)</code>, and
+            <code>MANUAL (Custom)</code>).
+          </p>
+          <p>
+            This Application <strong>does not replace</strong> the aircraft's approved Minimum Equipment List (MEL),
+            General Maintenance Manual (GMM), operator Operations Specifications, or regulations issued by the applicable
+            civil aviation authority (<strong>DGAC, FAA, EASA, ICAO</strong>, or other local authority). Certified
+            aircraft maintenance personnel, engineers, dispatchers, and flight crews must always independently verify
+            the exact UTC time, report date, and final expiration limits against approved aircraft documentation prior
+            to aircraft dispatch or release to service.
+          </p>
+        </section>
+
+        <p>
+          These terms and conditions apply to the <strong>AeroMEL Calculator</strong> app for mobile devices (Android and
+          iOS), together with any related services operated by <strong>Misael Ancan</strong> (collectively, the
+          &ldquo;Application&rdquo;). <strong>Misael Ancan</strong> is hereby referred to as the &ldquo;Service Provider&rdquo;.
+        </p>
+        <p>
+          By downloading or using the Application, you agree to these Terms and Conditions. You should read them
+          carefully before using the Application.
+        </p>
+
+        <h2>License to Use the Application</h2>
+        <p>
+          Subject to your compliance with these Terms, the Service Provider grants you a limited, non-exclusive,
+          non-transferable, revocable license to install and use the Application on a mobile device for personal or
+          internal reference purposes. You may not reproduce, distribute, modify, create derivative works from, reverse
+          engineer, decompile, or disassemble the Application, except as and only to the extent that such activity is
+          expressly permitted by applicable law.
+        </p>
+
+        <h2>Intellectual Property</h2>
+        <p>
+          The Service Provider retains all intellectual property rights in the Application, including its code, design,
+          trademarks, service marks, trade names, logos, and branding (the &ldquo;IP&rdquo;). Nothing in these Terms
+          grants you any license or right to use the Service Provider's trademarks, logos, or branding for any purpose.
+          You agree not to remove, alter, or obscure any copyright, trademark, or other proprietary notices displayed in
+          or on the Application.
+        </p>
+
+        <h2>Termination</h2>
+        <p>
+          The Service Provider may suspend your access to the Application or services if you materially breach these
+          Terms. The Service Provider may also suspend or terminate access immediately without notice if you violate
+          applicable law, infringe intellectual property rights, or engage in activity that could cause harm to other
+          users or the Service Provider. Upon termination, your right to use the Application will end and you must
+          delete all copies from your devices.
+        </p>
+        <p>
+          By accessing and using this Application, you represent that you are legally permitted to use it in your
+          jurisdiction and that you meet the minimum age of digital consent in your jurisdiction (or have obtained
+          consent from a parent or legal guardian). Unauthorized copying, modification, or extraction of source code or
+          derivative versions is not permitted.
+        </p>
+
+        <h2>Device Security and Local Operation</h2>
+        <p>
+          The Application performs MEL calculations locally on your mobile device without storing personal data on
+          external servers. It is your responsibility to maintain the security of your mobile device, access to the
+          Application, and the accuracy of your device's system date, time, and timezone settings.
+        </p>
+        <p>
+          The Service Provider strongly advises against jailbreaking or rooting your mobile device, which involves
+          removing software restrictions and limitations imposed by the official operating system of your device. Such
+          actions could expose your mobile device to malware, viruses, malicious programs, compromise your device's
+          security features, and may result in the Application not functioning correctly or at all.
+        </p>
+
+        <h2>Third Party Services</h2>
+        <p>
+          Please note that the Application utilizes third-party services that have their own Terms and Conditions.
+          Below are the links to the Terms and Conditions of the third-party service providers used by the Application:
+        </p>
+        <ul>
+          <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+          <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+        </ul>
+
+        <h2>Connectivity, Mobile Data Charges, and Battery</h2>
+        <p>
+          Please be aware that the Service Provider does not assume responsibility for certain aspects. While the core
+          MEL expiration calculator is designed to operate <strong>100% offline</strong> using your device's internal
+          clock, ancillary features such as loading the Google AdMob bottom banner require an active internet
+          connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held
+          responsible if ad functionality does not load due to lack of access to Wi-Fi or if you have exhausted your
+          data allowance.
+        </p>
+        <p>
+          If you are using the Application outside of a Wi-Fi area, please be aware that your mobile network provider's
+          agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage
+          during the connection to the Application, or other third-party charges, including roaming data charges.
+          Similarly, it is your responsibility to ensure that your device remains charged and that its system clock is
+          accurate. If your device runs out of battery or has an inaccurate clock, the Service Provider cannot be held
+          responsible.
+        </p>
+
+        <h2>Consumer Rights &amp; Limitation of Liability</h2>
+        <p>
+          Nothing in these Terms shall limit any rights you have under applicable consumer protection laws that cannot
+          be lawfully excluded.
+        </p>
+        <p>
+          To the fullest extent permitted by law, the Service Provider shall not be liable for any indirect, incidental,
+          special, consequential, or punitive damages, including but not limited to lost profits, data loss, operational
+          delays, or business interruption, even if advised of the possibility of such damages. However, the Service
+          Provider retains full liability for death or personal injury caused by negligence, fraud or fraudulent
+          misrepresentation, or any other liability that cannot be excluded or limited under applicable law.
+        </p>
+        <p>
+          If the Application is provided free of charge, the Service Provider's total liability for any claim is limited
+          to the minimum amount permitted by applicable law. The Service Provider accepts no liability for any loss,
+          direct or indirect, that you experience as a result of relying on third-party content or relying solely on
+          the Application without verifying official aircraft MEL documentation.
+        </p>
+
+        <h2>Indemnification</h2>
+        <p>
+          To the fullest extent permitted by law, you agree to indemnify and hold harmless the Service Provider, its
+          affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, and
+          expenses, including reasonable legal fees, arising out of or directly related to your breach of these Terms
+          or your intentional misuse of the Application. This indemnification does not apply to claims arising from the
+          Service Provider's own negligence, breach of these Terms, or violation of applicable law.
+        </p>
+
+        <h2>Updates</h2>
+        <p>
+          The Service Provider may wish to update the Application at some point. Requirements for the operating system
+          may change, and you will need to download updates if you want to continue using the Application. The Service
+          Provider does not guarantee that it will always update the Application so that it is compatible with your
+          particular operating system version. The Service Provider may also cease providing the Application and
+          terminate its use at any time without providing notice. Upon any termination, (a) the rights and licenses
+          granted to you in these terms will end; and (b) you must cease using the Application and delete it from your
+          device.
+        </p>
+
+        <h2>Governing Law and Jurisdiction</h2>
+        <p>
+          These Terms and Conditions are governed by the laws of the jurisdiction in which the Service Provider is
+          established (Republic of Chile), excluding conflict of law rules, except to the extent mandatory consumer
+          protection laws provide otherwise. Any dispute arising out of or relating to these Terms will be brought
+          before the courts that have jurisdiction under applicable law.
+        </p>
+
+        <h2>Severability &amp; Entire Agreement</h2>
+        <p>
+          If any provision of these Terms and Conditions is held to be invalid, illegal, or unenforceable by a court of
+          competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and
+          enforceable, and the remaining provisions shall remain in full force and effect. These Terms and Conditions,
+          together with the <a href="privacy-policy.html?lang=en">Privacy Policy</a>, constitute the entire agreement
+          between you and the Service Provider concerning your use of the Application.
+        </p>
+
+        <h2>Changes to These Terms and Conditions</h2>
+        <p>
+          The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review
+          this page regularly for any changes. The Service Provider will notify you of any changes by posting the new
+          Terms and Conditions on this page. Previous versions of these Terms and Conditions will be maintained and
+          made available upon request by contacting the Service Provider at
+          <a href="mailto:misael.ancan.1234@gmail.com">misael.ancan.1234@gmail.com</a>.
+        </p>
+        <p><strong>These terms and conditions are effective as of 2026-11-17.</strong></p>
+
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact
+          the Service Provider at <a href="mailto:misael.ancan.1234@gmail.com">misael.ancan.1234@gmail.com</a>.
+        </p>
+
+        <hr class="divider">
+        <p class="attribution">
+          This Terms &amp; Conditions page was generated by
+          <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a>.
+        </p>
+      </article>
+    </main>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      var isEn = lang === 'en';
+      document.body.classList.toggle('lang-en', isEn);
+      document.documentElement.lang = isEn ? 'en' : 'es';
+      document.getElementById('btn-es').classList.toggle('active', !isEn);
+      document.getElementById('btn-en').classList.toggle('active', isEn);
+      var url = new URL(window.location.href);
+      if (isEn) {
+        url.searchParams.set('lang', 'en');
+      } else {
+        url.searchParams.delete('lang');
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    (function initLang() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('lang') === 'en') {
+        setLang('en');
+      }
+    })();
+  </script>
+</body>
+</html>
